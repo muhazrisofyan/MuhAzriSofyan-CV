@@ -348,7 +348,7 @@ table {
 .menu-button,.menu-wrap {
 	position:fixed;
 	width:2.5em;
-	height:2.25em;
+	height:1.9em;
 	font-size:1.5em;
 	-webkit-transform:translate3d(1.5em,1.5em,0);
 	transform: translate3d(1.5em,1.5em,0);
@@ -369,16 +369,16 @@ table {
 	right:0.5em;
 	bottom:0.5em;
 	left:0.5em;
-	background: linear-gradient(#E04343 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#E04343 40%,#E04343 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#E04343 80%);
-	content:'';
+	background-color: #FBFBFB;
+	content:'MAS';
 }
-.menu-button:hover {
-	opacity: 0.6;
-}
+
 /* Menu */
 .menu-wrap {
 	z-index:999;
-	background: rgba(255, 255, 255, 1);
+  background: url('https://media.giphy.com/media/AtQ2qS6NbrR3W/source.gif') no-repeat;
+  background-size: contain;
+  background-color: white;
 	-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
 	transition:width 0.4s,height 0.4s,transform 0.4s;
 	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
@@ -390,7 +390,7 @@ table {
 	font-size:0.75em;
 }
 .icon-list {
-	float:right;
+	float: right;
 	padding:2.5em 2em 0 6em;
 }
 .icon-list a {
@@ -456,16 +456,15 @@ table {
 	background: url('../img/header.png') left no-repeat;
 	background-size: contain;
 	padding:0 0 0 0;
-	height: 680px;
+	height: 625px;
 	background-color: #FBFBFB;
 }
 .hero h1 {
-	font-size: 120px;
-	letter-spacing: -8px;
+	font-size: 90px;
+	letter-spacing: -15px;
 	margin: 0;
 	font-weight: 600;
-	line-height: 95px;
-	text-transform: uppercase;
+	line-height: 100px;
 }
 .hero h1 span {
 	color:#a1a9b0;
@@ -571,6 +570,7 @@ h1.arrow span {
     color: #E04343;
 }
 /* ==========================================================================About========================================================================== */
+
 .about-image {
 	height:400px;
 	-webkit-background-size:cover;

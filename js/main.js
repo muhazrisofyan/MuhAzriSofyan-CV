@@ -19,6 +19,7 @@ $(function() {
 /******************************************************************************************************************************
 Menu
 *******************************************************************************************************************************/
+
 (function() {
 
 	var bodyEl = document.body,
@@ -57,6 +58,26 @@ Menu
 		isOpen = !isOpen;
 	}
 
+	$(document).ready(function(){
+
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 490) {
+                classie.add( bodyEl, 'show-menu' );
+            }
+						if ($(this).scrollTop() <= 490) {
+                classie.remove( bodyEl, 'show-menu' );
+            }
+
+        });
+    });
+
+	});
+
 	init();
 
-})();
+}(jQuery));
